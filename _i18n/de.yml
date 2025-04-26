@@ -1,0 +1,15 @@
+hello: "Hallo"
+welcome: "Willkommen bei Sprachlichtung"
+description: "Schreiben Sie hier eine tolle Beschreibung für Sprachlichtung. Sie erscheint bei Google und in Feeds."
+
+site:
+  name: Meine Beispiel-Webseite
+  tagline: Mit gutem Beispiel voran!
+  description: Diese Beispiel-Webseite wird Sie begeistern!
+  keywords: Beispiel, Webseite, toll
+
+main:
+  welcomeSection:
+    anchor: willkommen
+    heading: Willkommen auf dieser tollen Webseite!
+    p1: Hunderttausende Menschen sind von dieser Seite begeistert. Sie auch?
