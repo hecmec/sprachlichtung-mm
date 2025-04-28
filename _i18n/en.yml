@@ -1,11 +1,12 @@
-hello: "Hello"
-welcome: "Welcome to Sprachlichtung"
-# description: "Write an awesome description for Sprachlichtung here. It appears in Google and in feeds."
+# hello: "Hello"
+# welcome: "Welcome to Sprachlichtung"
+# description: description-en
 
 site:
-  name: "Sprachlichtung"
-  tagline: "Leading by good example!"
-  description: "This example website will amaze you!"
+  title: My example website
+  name: Immanuel Lupinus
+  tagline: Leading by good example!
+  description: This example website will amaze you!
   keywords: example, website, amazing
 
 main:
