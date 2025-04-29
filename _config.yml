@@ -110,24 +110,33 @@ footer:
       url: "https://instagram.com/"
 
 defaults:
-  # _posts
+  # _docs
   - scope:
       path: ""
-      type: posts
+      type: docs
     values:
-      layout: single
-      author_profile: true
-      read_time: true
-      comments: true
-      share: true
-      related: true
+      sidebar:
+        nav: "docs"
   # _pages
   - scope:
-      path: "_pages"
+      path: ""
       type: pages
     values:
       layout: single
-      author_profile: true
+      sidebar:
+        nav: "docs"
+      # author_profile: true
+  # _posts
+  - scope:
+      path: "_posts"
+      type: posts
+    values:
+      layout: single
+      # author_profile: true
+      read_time: true
+      # comments: true
+      share: true
+      # related: true
 
 category_archive:
   type: liquid
