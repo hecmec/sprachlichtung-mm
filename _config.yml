@@ -13,10 +13,15 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: Sprachlichtung
+
+minimal_mistakes_skin: "default"
+
+locale: "en-US"
+title: "Sprachlichtung"
 email: "immanuel.lupinus@gmail.com"
-name: "Immanuel Lupinus"
-description: "A Place about Rationality and Critical Thinking!"
+# name: "Immanuel Lupinus"
+# description: "A Place about Rationality and Critical Thinking!"
+
 # https://byparker.com/blog/2014/clearing-up-confusion-around-baseurl/
 url: "https://hecmec.github.io"
 # the subpath of your site, e.g. /blog
@@ -24,22 +29,21 @@ baseurl: "/sprachlichtung-mm"
 
 twitter_username: hecmec
 github_username: hecmec
-minimal_mistakes_skin: default
 
 search: true
 masthead_title: "My Custom Title"
 
 # Build settings
-markdown: kramdown
-remote_theme: mmistakes/minimal-mistakes
+markdown: "kramdown"
+remote_theme: "mmistakes/minimal-mistakes"
 # Outputting
-permalink: "/:categories/:title/
+permalink: "/:categories/:title/"
 paginate: 5 # amount of posts to show
-paginate_path: /page:num/
+paginate_path: "/page:num/"
 timezone: "Europe/Berlin"
 
 include:
-  - _pages
+  - "_pages"
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
@@ -72,12 +76,12 @@ languageNames:
   en: English
 
 # GitHub Pages settings
-repository: hecmec/sprachlichtung-mm
+repository: "hecmec/sprachlichtung-mm"
 
 author:
-  name: Immanuel Lupinus
-  avatar: /assets/images/bio-photo.jpg
-  bio: My awesome biography constrained to a sentence or two goes here.
+  name: "Immanuel Lupinus"
+  avatar: "/assets/images/bio-photo.jpg"
+  bio: "My awesome biography constrained to a sentence or two goes here."
   links:
     - label: "Website"
       icon: "fas fa-fw fa-link"
@@ -126,7 +130,7 @@ defaults:
 
 category_archive:
   type: liquid
-  path: /categories/
+  path: "/categories/"
 tag_archive:
   type: liquid
-  path: /tags/
+  path: "/tags/"

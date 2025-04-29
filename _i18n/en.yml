@@ -1,16 +1,16 @@
-# hello: "Hello"
-# welcome: "Welcome to Sprachlichtung"
-# description: description-en
+hello: "Hello"
+welcome: "Welcome to Sprachlichtung"
+description: "description-en"
 
 site:
-  title: My example website
-  name: Immanuel Lupinus
-  tagline: Leading by good example!
-  description: This example website will amaze you!
-  keywords: example, website, amazing
+  title: "Sprachlichtung"
+  name: "Immanuel Lupinus"
+  description: "A Place about Rationality and Critical Thinking!"
+  tagline: "Leading by good example!"
+  keywords: "example, website, amazing"
 
 main:
   welcomeSection:
-    anchor: welcome
-    heading: Welcome to this marvelous webseite.
-    p1: Hundreds of thousands of people are amazed by this site. Are you?
+    anchor: "welcome"
+    heading: "Welcome to this marvelous webseite."
+    p1: "Hundreds of thousands of people are amazed by this site. Are you?"

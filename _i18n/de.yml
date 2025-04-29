@@ -1,12 +1,13 @@
-# hello: "Hallo"
-# welcome: "Willkommen bei Sprachlichtung"
-# description: "Schreiben Sie hier eine tolle Beschreibung für Sprachlichtung. Sie erscheint bei Google und in Feeds."
+hello: "Hallo"
+welcome: "Willkommen bei Sprachlichtung"
+description: "Schreiben Sie hier eine tolle Beschreibung für Sprachlichtung. Sie erscheint bei Google und in Feeds."
 
 site:
-  name: Meine Beispiel-Webseite
-  tagline: Mit gutem Beispiel voran!
-  description: Diese Beispiel-Webseite wird Sie begeistern!
-  keywords: Beispiel, Webseite, toll
+  title: "Sprachlichtung"
+  name: "Immanuel Lupinus"
+  description: "A Place about Rationality and Critical Thinking!"
+  tagline: "Leading by good example!"
+  keywords: "example, website, amazing"
 
 main:
   welcomeSection:
