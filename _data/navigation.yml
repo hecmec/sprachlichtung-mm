@@ -1,9 +1,38 @@
 main:
+  # - title: "Quick-Start Guide"
+  #   url: /docs/quick-start-guide/
   - title: "Posts"
-    url: /posts/
+    url: /year-archive/
   - title: "Categories"
     url: /categories/
   - title: "Tags"
     url: /tags/
-  - title: "About"
-    url: /about/
+  - title: "Pages"
+    url: /page-archive/
+  - title: "Collections"
+    url: /collection-archive/
+  - title: "BabelCoach"
+    url: "http://www.babelcoach.net/"
+    description: "A free online tool to help you learn a new language."
+    target: _blank
+  - title: "WunderQuiz"
+    url: "https://www.wunderquiz.com/"
+    description: "A free online tool to quiz the world."
+    target: _blank
+
+docs:
+  - title: Topic 1
+    children:
+      - title: "Sample1"
+        url: /docs/sample1/
+      - title: "sample2"
+        url: /docs/sample2/
+
+  - title: Topic 2
+    children:
+      - title: "Sample3"
+        url: /docs/sample3/
+      - title: "sample4"
+        url: /docs/sample4/
+      - title: "sample5"
+        url: /docs/sample5/

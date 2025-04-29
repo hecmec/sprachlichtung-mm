@@ -17,7 +17,7 @@
 minimal_mistakes_skin: "default"
 
 locale: "en-US"
-title: "Sprachlichtung"
+title: "SprachLichtung"
 email: "immanuel.lupinus@gmail.com"
 # name: "Immanuel Lupinus"
 # description: "A Place about Rationality and Critical Thinking!"
@@ -31,7 +31,8 @@ twitter_username: hecmec
 github_username: hecmec
 
 search: true
-masthead_title: "My Custom Title"
+masthead_title: "Sprachlichtung"
+masthead_subtitle: "A Place about Rationality and Critical Thinking!"
 
 # Build settings
 markdown: "kramdown"
@@ -81,29 +82,29 @@ repository: "hecmec/sprachlichtung-mm"
 author:
   name: "Immanuel Lupinus"
   avatar: "/assets/images/bio-photo.jpg"
-  bio: "My awesome biography constrained to a sentence or two goes here."
+  bio: "De nobis ipsis silemus. <br>Von uns selbst schweigen wir."
   links:
-    - label: "Website"
+    - label: "SprachLichtung"
       icon: "fas fa-fw fa-link"
       url: "https://"
-    - label: "Twitter"
-      icon: "fab fa-fw fa-twitter-square"
-      url: "https://twitter.com/"
+    # - label: "Twitter"
+    #   icon: "fab fa-fw fa-twitter-square"
+    #   url: "https://twitter.com/"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/"
-    - label: "Instagram"
-      icon: "fab fa-fw fa-instagram"
-      url: "https://instagram.com/"
+    # - label: "Instagram"
+    #   icon: "fab fa-fw fa-instagram"
+    #   url: "https://instagram.com/"
 
 footer:
   links:
-    - label: "Twitter"
-      icon: "fab fa-fw fa-twitter-square"
-      url: "https://twitter.com/"
+    # - label: "Twitter"
+    #   icon: "fab fa-fw fa-twitter-square"
+    #   url: "https://twitter.com/"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      url: "https://github.com/"
+      url: "https://github.com/hecmec/sprachlichtung-mm"
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
       url: "https://instagram.com/"
