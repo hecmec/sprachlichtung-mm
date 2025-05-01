@@ -21,12 +21,12 @@ main:
     target: _blank
 
 docs:
-  - title: Topic 1
+  - title: Layouts
     children:
-      - title: "Sample1"
-        url: /docs/sample1/
+      - title: "Single Layout"
+        url: /docs/layouts/single_layout/
       - title: "sample2"
-        url: /docs/sample2/
+        url: /docs/layouts/sample2/
 
   - title: Topic 2
     children:
