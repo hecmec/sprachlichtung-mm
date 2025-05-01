@@ -14,10 +14,10 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-minimal_mistakes_skin: "default"
+title: "Sprachlichtung1"
+subtitle: "The Language Clearing"
 
 locale: "en"
-title: "Sprachlichtung"
 email: "immanuel.lupinus@gmail.com"
 # name: "Immanuel Lupinus"
 # description: "A Place about Rationality and Critical Thinking!"
@@ -35,8 +35,10 @@ masthead_title: "Sprachlichtung"
 masthead_subtitle: "A Place about Rationality and Critical Thinking!"
 
 # Build settings
-markdown: "kramdown"
 remote_theme: "mmistakes/minimal-mistakes"
+minimal_mistakes_skin: "default"
+markdown: "kramdown"
+
 # Outputting
 permalink: "/:categories/:title/"
 paginate: 5 # amount of posts to show
