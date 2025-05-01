@@ -46,7 +46,7 @@ paginate_path: "/page:num/"
 timezone: "Europe/Berlin"
 
 include:
-  - "_pages"
+  - _pages
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
@@ -73,7 +73,7 @@ plugins:
 
 languages: ["en", "de"] # Example: English and German
 exclude_from_localizations: ["assets", "CNAME"]
-defaultLang: en
+# defaultLang: en, first language in the list
 languageNames:
   de: Deutsch
   en: English
@@ -112,13 +112,24 @@ footer:
       url: "https://instagram.com/"
 
 defaults:
-  # _docs
+  # _posts
   - scope:
       path: ""
-      type: docs
+      type: posts
     values:
-      sidebar:
-        nav: "docs"
+      layout: single
+      # author_profile: true
+      read_time: true
+      # comments: true
+      share: true
+      related: true
+  # _docs
+  # - scope:
+  #     path: ""
+  #     type: docs
+  #   values:
+  #     sidebar:
+  #       nav: "docs"
   # _pages
   - scope:
       path: ""
@@ -128,17 +139,6 @@ defaults:
       sidebar:
         nav: "docs"
       # author_profile: true
-  # _posts
-  - scope:
-      path: "_posts"
-      type: posts
-    values:
-      layout: single
-      # author_profile: true
-      read_time: true
-      # comments: true
-      share: true
-      # related: true
 
 category_archive:
   type: liquid
