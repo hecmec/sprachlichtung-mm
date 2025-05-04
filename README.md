@@ -1,5 +1,7 @@
 # Minimal Mistakes remote theme starter
 
+Jekyll Doc: https://jekyllrb.com/docs/pages/
+
 Click [**Use this template**](https://github.com/mmistakes/mm-github-pages-starter/generate) button above for the quickest method of getting started with the [Minimal Mistakes Jekyll theme](https://github.com/mmistakes/minimal-mistakes).
 
 Contains basic configuration to get you a site with:
@@ -16,6 +18,12 @@ Contains basic configuration to get you a site with:
 
 Replace sample content with your own and [configure as necessary](https://mmistakes.github.io/minimal-mistakes/docs/configuration/).
 
+## run
+
+```bash
+bundle exec jekyll serve
+```
+
 ---
 
 ## Troubleshooting
@@ -28,4 +36,7 @@ If you have a question about using Jekyll, start a discussion on the [Jekyll For
 
 ## Multilingual Site with GitHub Pages
 
-https://www.klaasnotfound.com/2017/02/16/proper-multilingual-site-with-github-pages-and-jekyll/
+https://github.com/kurtsson/jekyll-multiple-languages-plugin/tree/master?tab=readme-ov-file
+
+
+[Klaasnotfound: modifications of the plugin](https://www.klaasnotfound.com/2017/02/16/proper-multilingual-site-with-github-pages-and-jekyll/)

@@ -2,6 +2,11 @@ hello: "Hello"
 welcome: "Welcome to Sprachlichtung"
 description: "description-en"
 
+langs:
+  de: Deutsch
+  en: English
+  fr: Français
+
 site:
   title: "Sprachlichtung"
   subtitle: "The Language Clearing"
@@ -15,3 +20,8 @@ main:
     anchor: "welcome"
     heading: "Welcome to this marvelous webseite."
     p1: "Hundreds of thousands of people are amazed by this site. Are you?"
+
+pages:
+  test: testtitle
+  about: 
+    title: "We about us"

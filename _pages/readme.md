@@ -1,0 +1,1 @@
+default pages without language go here

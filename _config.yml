@@ -14,7 +14,7 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: "Sprachlichtung1"
+title: "Sprachlichtung_default"
 subtitle: "The Language Clearing"
 
 locale: "en"
@@ -72,8 +72,10 @@ plugins:
   - jekyll-multiple-languages-plugin
 
 languages: ["en", "de"] # Example: English and German
-exclude_from_localizations: ["assets", "CNAME"]
-# defaultLang: en, first language in the list
+defaultLang: en
+exclude_from_localizations: ["CNAME"]
+# exclude_from_localizations: ["js", "images", "css", "CNAME"]
+# default_locale_in_subfolder: true
 languageNames:
   de: Deutsch
   en: English
@@ -83,7 +85,7 @@ repository: "hecmec/sprachlichtung-mm"
 
 author:
   name: "Immanuel Lupinus"
-  avatar: "/assets/images/bio-photo.jpg"
+  avatar: "assets/images/bio-photo.jpg"
   bio: "De nobis ipsis silemus. <br>Von uns selbst schweigen wir."
   links:
     - label: "SprachLichtung"
