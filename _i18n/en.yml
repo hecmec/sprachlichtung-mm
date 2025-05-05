@@ -22,6 +22,6 @@ main:
     p1: "Hundreds of thousands of people are amazed by this site. Are you?"
 
 pages:
-  test: testtitle
-  about: 
-    title: "We about us"
+  yearArchive: "Year Archive"
+  about: "We about us"
+

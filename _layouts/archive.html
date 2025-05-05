@@ -1,0 +1,36 @@
+---
+layout: default
+---
+
+{% if page.header.overlay_color or page.header.overlay_image or page.header.image %}
+  {% include page__hero.html %}
+{% elsif page.header.video.id and page.header.video.provider %}
+  {% include page__hero_video.html %}
+{% endif %}
+
+{% if page.url != "/" and site.breadcrumbs %}
+  {% unless paginator %}
+    {% include breadcrumbs.html %}
+  {% endunless %}
+{% endif %}
+
+<div id="main" role="main">
+  {% include sidebar.html %}
+
+  <div class="archive">
+    {% unless page.header.overlay_color or page.header.overlay_image %}
+    <!-- if the page title starts with 'pages.' then we translate it -->
+      {% if page.title -%}
+        {% capture title_prefix %}{{ page.title | slice: 0, 6 }}{% endcapture %}
+        {% if title_prefix == 'pages.' %}
+          {% capture pageTitle %}{% t page.title %}{% endcapture %}
+        {% else %}
+          {% assign pageTitle = page.title %}
+        {% endif %}
+        <h1 id="page-title" class="page__title"{% if site.lang %} lang="{{ site.lang }}"{% endif %}>{{ pageTitle }}</h1>
+        {%- endif %}
+
+    {% endunless %}
+    {{ content }}
+  </div>
+</div>

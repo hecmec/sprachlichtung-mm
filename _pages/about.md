@@ -1,10 +1,11 @@
 ---
 layout: single
-title: pages.about.title
+title_key: pages.about
+title: pages.about
 
 namespace: about
 permalink: /about-us/
 permalink_de: /ueber-uns/
 ---
 
-{% tf about.md %}
+{% tf about/about.md %}

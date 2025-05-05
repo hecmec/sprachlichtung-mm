@@ -22,6 +22,5 @@ main:
     p1: "Hunderttausende Menschen sind von dieser Seite begeistert. Sie auch?"
 
 pages:
-  test: "ein test titel"
-  about: 
-    title: "Wir über uns"
+  yearArchive: "Jahresarchiv"
+  about: "Wir über uns"

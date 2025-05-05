@@ -31,10 +31,15 @@ layout: default
       {% unless page.header.overlay_color or page.header.overlay_image %}
         <header>
           {% if page.title -%}
-              {% assign titleTrans = translate page.title %}
-              <h1 id="page-title" class="page__title" itemprop="headline">
-              <!-- <a href="{{ page.url | absolute_url }}" itemprop="url">{{ titleTrans | markdownify | remove: "<p>" | remove: "</p>" }}</a> -->
-              <a href="{{ page.url | absolute_url }}" itemprop="url">{% t page.title %}</a>
+              <!-- if the page title starts with 'pages.' then we translate it -->
+            {% capture title_prefix %}{{ page.title | slice: 0, 6 }}{% endcapture %}
+            {% if title_prefix == 'pages.' %}
+              {% capture pageTitle %}{% t page.title %}{% endcapture %}
+            {% else %}
+              {% assign pageTitle = page.title %}
+            {% endif %}
+            <h1 id="page-title" class="page__title" itemprop="headline">
+              <a href="{{ page.url | absolute_url }}" itemprop="url">{{ pageTitle | markdownify | remove: "<p>" | remove: "</p>" }}</a>
             </h1>
           {%- endif %}
           {% include page__meta.html %}

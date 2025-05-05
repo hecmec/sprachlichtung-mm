@@ -76,6 +76,7 @@ defaultLang: en
 exclude_from_localizations: ["CNAME"]
 # exclude_from_localizations: ["js", "images", "css", "CNAME"]
 # default_locale_in_subfolder: true
+
 languageNames:
   de: Deutsch
   en: English
