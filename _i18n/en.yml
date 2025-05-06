@@ -23,5 +23,7 @@ main:
 
 pages:
   yearArchive: "Year Archive"
+  tagArchive: "Tag Archive"
+  categoryArchive: "Category Archive"
   about: "We about us"
 
