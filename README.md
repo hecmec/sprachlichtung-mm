@@ -40,3 +40,33 @@ https://github.com/kurtsson/jekyll-multiple-languages-plugin/tree/master?tab=rea
 
 
 [Klaasnotfound: modifications of the plugin](https://www.klaasnotfound.com/2017/02/16/proper-multilingual-site-with-github-pages-and-jekyll/)
+
+### Apply plugin recommandations
+
+### Adapts Templates for archive and single pages
+
+- for ex. the about.md page in the root has a `layout: single` and `title: pages.about`. So if it title start with "pages." we translate it.
+
+        {% if page.title -%}
+          {% capture title_prefix %}{{ page.title | slice: 0, 6 }}{% endcapture %}
+          {% if title_prefix == 'pages.' %}
+            {% capture pageTitle %}{% t page.title %}{% endcapture %}
+          {% else %}
+            {% assign pageTitle = page.title %}
+          {% endif %}
+          <h1 id="page-title" class="page__title"{% if site.lang %} lang="{{ site.lang }}"{% endif %}>{{ pageTitle }}</h1>
+        {%- endif %}
+
+### Set locale
+
+- the minimal mistakes locale it set in _config.yml locale: en
+- MM is using this locale
+
+defaults:
+  # For all pages, posts, and documents
+  - scope:
+      path: ""
+    values:
+      locale: "{{ site.lang }}"  # _posts
+
+

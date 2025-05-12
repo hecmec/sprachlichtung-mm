@@ -17,7 +17,7 @@
 title: "Sprachlichtung_default"
 subtitle: "The Language Clearing"
 
-locale: "en"
+locale: en
 email: "immanuel.lupinus@gmail.com"
 # name: "Immanuel Lupinus"
 # description: "A Place about Rationality and Critical Thinking!"
@@ -115,7 +115,11 @@ footer:
       url: "https://instagram.com/"
 
 defaults:
-  # _posts
+  # For all pages, posts, and documents
+  - scope:
+      path: ""
+    values:
+      locale: "{{ site.lang }}"  # _posts
   - scope:
       path: ""
       type: posts
