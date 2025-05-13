@@ -1,4 +1,5 @@
-{% capture logo_path %}{{ site.logo }}{% endcapture %} {% assign site.locale = site.lang %}
+{% capture logo_path %}{{ site.logo }}{% endcapture %} 
+{% assign page.locale = page.lang %}
 <div class="masthead">
   <div class="masthead__inner-wrap">
     <div class="masthead__menu">
@@ -12,8 +13,6 @@
           {{ site.masthead_title | default: site.title }} {% if site.subtitle %}<span class="site-subtitle">{{ site.subtitle }}</span>{%
           endif %}
         </a>
-        <span>la: {{ site.lang }}</span>
-        <span>lo: {{ site.locale }}</span>
         <ul class="visible-links">
           {%- for link in site.data.navigation.main -%}
             <li class="masthead__menu-item">
@@ -27,12 +26,12 @@
         </ul>
         {% if site.search == true %}
         <button class="search__toggle" type="button">
-          <span class="visually-hidden">{{ site.data.ui-text[site.locale].search_label | default: "Toggle search" }}</span>
+          <span class="visually-hidden">{{ site.data.ui-text[site.lang].search_label | default: "Toggle search" }}</span>
           <i class="fas fa-search"></i>
         </button>
         {% endif %}
         <button class="greedy-nav__toggle hidden" type="button">
-          <span class="visually-hidden">{{ site.data.ui-text[site.locale].menu_label | default: "Toggle menu" }}</span>
+          <span class="visually-hidden">{{ site.data.ui-text[site.lang].menu_label | default: "Toggle menu" }}</span>
           <div class="navicon"></div>
         </button>
         <ul class="hidden-links hidden"></ul>

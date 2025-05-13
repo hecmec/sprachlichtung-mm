@@ -72,7 +72,7 @@ plugins:
   - jekyll-multiple-languages-plugin
 
 languages: ["en", "de"] # Example: English and German
-defaultLang: en
+default_lang: en
 exclude_from_localizations: ["CNAME"]
 # exclude_from_localizations: ["js", "images", "css", "CNAME"]
 # default_locale_in_subfolder: true
@@ -115,11 +115,7 @@ footer:
       url: "https://instagram.com/"
 
 defaults:
-  # For all pages, posts, and documents
-  - scope:
-      path: ""
-    values:
-      locale: "{{ site.lang }}"  # _posts
+# _posts
   - scope:
       path: ""
       type: posts
@@ -137,6 +133,7 @@ defaults:
   #   values:
   #     sidebar:
   #       nav: "docs"
+  
   # _pages
   - scope:
       path: ""
