@@ -5,6 +5,9 @@
   <ul class="nav__items">
     {% for navname in include.nav %}
       {% assign navigation = site.data.navigation[navname] %}
+      {% if site.lang != site.default_lang and site.data[site.lang] and site.data[site.lang].navigation and site.data[site.lang].navigation[navname] %}
+        {% assign navigation = site.data[site.lang].navigation[navname] %}
+      {% endif %}
       {% for nav in navigation %}
         <li>
           {% if nav.url %}

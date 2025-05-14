@@ -11,16 +11,16 @@ main:
     url: /tags/
   - title: "About"
     url: /about-us/
-  # - title: "Collections"
-  #   url: /collection-archive/
-  - title: "BabelCoach"
-    url: "http://www.babelcoach.net/"
-    description: "A free online tool to help you learn a new language."
-    target: _blank
-  - title: "WunderQuiz"
-    url: "https://www.wunderquiz.com/"
-    description: "A free online tool to quiz the world."
-    target: _blank
+  - title: "Collections"
+    url: /collection-archive/
+  # - title: "BabelCoach"
+  #   url: "http://www.babelcoach.net/"
+  #   description: "A free online tool to help you learn a new language."
+  #   target: _blank
+  # - title: "WunderQuiz"
+  #   url: "https://www.wunderquiz.com/"
+  #   description: "A free online tool to quiz the world."
+  #   target: _blank
 
 docs:
   - title: Layouts

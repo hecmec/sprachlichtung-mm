@@ -7,16 +7,16 @@ main:
     url: /tags/
   - title: "Über uns"
     url: /ueber-uns/
-  # - title: "Collections"
-  #   url: /collection-archive/
-  - title: "BabelCoach"
-    url: "http://www.babelcoach.net/"
-    description: "Ein kostenloses Online-Tool zum Erlernen einer neuen Sprache."
-    target: _blank
-  - title: "WunderQuiz"
-    url: "https://www.wunderquiz.com/"
-    description: "Ein kostenloses Online-Tool zum Quizzen der Welt."
-    target: _blank
+  - title: "Collections"
+    url: /collection-archive/
+  # - title: "BabelCoach"
+  #   url: "http://www.babelcoach.net/"
+  #   description: "Ein kostenloses Online-Tool zum Erlernen einer neuen Sprache."
+  #   target: _blank
+  # - title: "WunderQuiz"
+  #   url: "https://www.wunderquiz.com/"
+  #   description: "Ein kostenloses Online-Tool zum Quizzen der Welt."
+  #   target: _blank
 
 docs:
   - title: Layouts

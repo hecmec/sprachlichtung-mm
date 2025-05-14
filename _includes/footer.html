@@ -18,49 +18,26 @@
   </ul>
 </div>
 
-<!-- <div align="right">
-    {% for lang in site.languages %}
-      {% unless site.lang == lang %}
-        {% if lang == site.default_lang and site.default_locale_in_subfolder != true %}
-          <a href="{{ site.baseurl_root }}{{ page.url }}" >{% t langs.{{ lang }} %}</a>
-        {% else %}
-          <a href="{{ site.baseurl_root }}/{{ lang }}{{ page.url }}" >{% t langs.{{ lang }} %}</a>
-        {% endif %}
-        
-        {% assign next = forloop.index | plus: 1 %}
-        
-        {% if forloop.last != true and site.languages[forloop.index] != site.lang or site.languages[forloop.index] == site.lang and next < forloop.length %}
-          <span class="separator"> &bull; </span>
-        {% endif %}
-        
-      {% endunless %}
-    {% endfor %}
-  </div> -->
-<div>
+<!-- <div>
   <strong><a class="active" href="#">{{ site.lang }} </a></strong>        
-    <span class="separator"> | </span>
 
     {% for lang in site.languages %}
       {% if lang == site.lang %} {% continue %} {% endif %}
-      {% if lang == site.defaultLang %}
+      {% if lang == site.default_lang %}
         {% assign langPart = "" %}
       {% else %}
         {% assign langPart = lang | append: "/" %}
       {% endif %}
 
       {% if page.namespace %}
-        <a href="{% tl {{ page.namespace }} {{ langPart }} %}">{{ lang}}</a>
+      <span class="separator"> | </span>
+      <a href="{% tl {{ page.namespace }} {{ langPart }} %}">{{ lang}}</a>
       {% else %}
-        <a href="{{ site.baseurl_root }}/{{ langPart }}">{{ lang }}</a>
-      {% endif %}
-      {% if forloop.last != true %}
-        <span class="separator"> | </span>
+      <span class="separator"> | </span>
+      <a href="{{ site.baseurl_root }}/{{ langPart }}">{{ lang }}</a>
       {% endif %}
     {% endfor %}
-
-
-    <p>Current language: {{ site.lang }}</p>
-</div>
+</div> -->
 
 
 <div class="page__footer-copyright">&copy; {{ site.time | date: '%Y' }} 
