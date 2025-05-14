@@ -1,6 +1,6 @@
 ---
 title: pages.tagArchive
-permalink: /tags/
 layout: tags
+permalink: /tags/
 author_profile: true
 ---

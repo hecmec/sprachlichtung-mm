@@ -1,6 +1,6 @@
 ---
 title: pages.yearArchive
-permalink: /posts/
 layout: posts
+permalink: /posts/
 author_profile: true
 ---

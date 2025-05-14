@@ -1,6 +1,6 @@
-hello: "Hallo"
-welcome: "Willkommen bei Sprachlichtung"
-description: "Schreiben Sie hier eine tolle Beschreibung für Sprachlichtung. Sie erscheint bei Google und in Feeds."
+# hello: "Hallo"
+# welcome: "Willkommen bei Sprachlichtung"
+# description: "Schreiben Sie hier eine tolle Beschreibung für Sprachlichtung. Sie erscheint bei Google und in Feeds."
 
 langs:
   de: Deutsch
@@ -17,12 +17,13 @@ site:
 
 main:
   welcomeSection:
-    anchor: "willkommen"
-    heading: "Willkommen auf dieser tollen Webseite!"
-    p1: "Hunderttausende Menschen sind von dieser Seite begeistert. Sie auch?"
+    anchor: willkommen
+    heading: Willkommen auf dieser tollen Webseite!
+    p1: Hunderttausende Menschen sind von dieser Seite begeistert. Sie auch?
 
 pages:
-  yearArchive: "Jahresarchiv"
-  tagArchive: "Schlagwörter"
-  categoryArchive: "Kategorien"
-  about: "Wir über uns"
+  yearArchive: Jahresarchiv
+  tagArchive: Schlagwörter
+  categoryArchive: Kategorien
+  about: Wir über uns"
+  404: Page not found

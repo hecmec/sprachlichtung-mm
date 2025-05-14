@@ -17,7 +17,7 @@
 title: "Sprachlichtung_default"
 subtitle: "The Language Clearing"
 
-locale: en
+locale: de
 email: "immanuel.lupinus@gmail.com"
 # name: "Immanuel Lupinus"
 # description: "A Place about Rationality and Critical Thinking!"
@@ -71,15 +71,11 @@ plugins:
   - jekyll-seo-tag
   - jekyll-multiple-languages-plugin
 
-languages: ["en", "de"] # Example: English and German
-default_lang: en
+languages: ["de", "en"] # Example:  German and English
+default_lang: de
 exclude_from_localizations: ["CNAME"]
 # exclude_from_localizations: ["js", "images", "css", "CNAME"]
 # default_locale_in_subfolder: true
-
-languageNames:
-  de: Deutsch
-  en: English
 
 # GitHub Pages settings
 repository: "hecmec/sprachlichtung-mm"

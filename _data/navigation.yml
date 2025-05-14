@@ -1,40 +1,36 @@
 main:
-  # - title: "Quick-Start Guide"
-  #   url: /docs/quick-start-guide/
-  # - title: "Pages"
-  #   url: /page-archive/
-  - title: "Posts"
+  - title: "Beiträge"
     url: /posts/
-  - title: "Categories"
+  - title: "Kategorien"
     url: /categories/
-  - title: "Tags"
+  - title: "Schlagwörter"
     url: /tags/
-  - title: "About"
-    url: /about-us/
+  - title: "Über uns"
+    url: /ueber-uns/
   # - title: "Collections"
   #   url: /collection-archive/
   - title: "BabelCoach"
     url: "http://www.babelcoach.net/"
-    description: "A free online tool to help you learn a new language."
+    description: "Ein kostenloses Online-Tool zum Erlernen einer neuen Sprache."
     target: _blank
   - title: "WunderQuiz"
     url: "https://www.wunderquiz.com/"
-    description: "A free online tool to quiz the world."
+    description: "Ein kostenloses Online-Tool zum Quizzen der Welt."
     target: _blank
 
 docs:
   - title: Layouts
     children:
-      - title: "Single Layout"
+      - title: "Einzelnes Layout"
         url: /docs/layouts/single_layout/
-      - title: "sample2"
+      - title: "Beispiel2"
         url: /docs/layouts/sample2/
 
-  - title: Topic 2
+  - title: Thema 2
     children:
-      - title: "Sample3"
+      - title: "Beispiel3"
         url: /docs/sample3/
-      - title: "sample4"
+      - title: "Beispiel4"
         url: /docs/sample4/
-      - title: "sample5"
+      - title: "Beispiel5"
         url: /docs/sample5/
