@@ -1,0 +1,36 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+search: false
+---
+
+@charset "utf-8";
+
+@import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
+@import "minimal-mistakes"; // main partials
+
+// Custom styles
+html {
+    font-size: 16px; /* Base font size */
+}
+@media (min-width: 48em) { html { font-size: 17px; } }
+@media (min-width: 64em) { html { font-size: 18px; } }
+@media (min-width: 80em) { 
+  html { font-size: 19px; } 
+  #main { max-width: 1600px; }
+  .masthead__inner-wrap { max-width: 1600px; }
+}
+
+.page__hero {
+    max-height: 200px;
+    overflow: hidden;
+}
+
+.nav__list .nav__items { margin: 0; font-size: 1rem; }
+// .nav__list .nav__items .active { margin-inline-start: -0.5em; padding-inline: 0.5em; font-weight: bold; }
+// .nav__list .nav__items li.active { background-color: violet; }
+.nav__list .nav__items li { padding: 0.1em 0.25em; background-color:#eee; margin-bottom: 2px; }
+.nav__list .nav__items ul { background-color:#fff;  }
+.nav__list .nav__items li:has(> .active) { background-color: violet; }
+.sidebar p, .sidebar li { font-size: 1em; line-height: 1.5; }
+.nav__sub-title { font-size: 1.0em; }
+    

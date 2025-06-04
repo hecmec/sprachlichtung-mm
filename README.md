@@ -20,7 +20,7 @@ Replace sample content with your own and [configure as necessary](https://mmista
 
 ## run
 
-```bash
+```
 bundle exec jekyll serve
 ```
 
@@ -45,7 +45,7 @@ https://github.com/kurtsson/jekyll-multiple-languages-plugin/tree/master?tab=rea
 
 ### Adapts Templates for archive and single pages
 
-- for ex. the about.md page in the root has a `layout: single` and `title: pages.about`. So if it title start with "pages." we translate it.
+- for ex. the about.md page in the root has a `layout: single` and `title: pages.about`. So if its title start with "pages." we translate it.
 
   {% if page.title -%}
     {% capture title_prefix %}{{ page.title | slice: 0, 6 }}{% endcapture %}

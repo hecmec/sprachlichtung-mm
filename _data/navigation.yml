@@ -19,18 +19,56 @@ main:
   #   target: _blank
 
 docs:
-  - title: Layouts
+  - title: "Kritisches Denken"
     children:
-      - title: "Einzelnes Layout"
-        url: /docs/layouts/single_layout/
-      - title: "Beispiel2"
-        url: /docs/layouts/sample2/
+      - title: "Einführung in Kritisches Denken"
+        url: /docs/1_kritisches_denken/1_einfuehrung_ins_kritische_denken/
+      - title: "Grundlagen der Logik"
+        url: /docs/1_kritisches_denken/2_grundlagen_der_logik/
+      - title: "Was ist ein gutes Argument?"
+        url: /docs/1_kritisches_denken/3_was_ist_ein_gutes_argument/
+      - title: "Sprachfallen und Holzwege"
+        url: /docs/1_kritisches_denken/4_sprachfallen_und_holzwege/
+      - title: "Kognitive Verzerrungen und mentale Heuristiken"
+        url: /docs/1_kritisches_denken/5_kognitive_verzerrungen_und_mentale_heuristiken/
+      - title: "Fehlschlüsse - Schlechtes Argumentieren"
+        url: /docs/1_kritisches_denken/6_fehlschlüsse_schlechtes_argumentieren/
+      - title: "Paradoxien - Denkfallen verstehen"
+        url: /docs/1_kritisches_denken/7_paradoxien_denkfallen_verstehen/
+      - title: "Manipulation und Selbstverteidigung"
+        url: /docs/1_kritisches_denken/8_manipulation_und_selbstverteidigung/
+      - title: "Intelektuelle Tugenden und Laster"
+        url: /docs/1_kritisches_denken/9_intelektuelle_tugenden_und_laster/
+      - title: "Die Wissenschaft und ihre Methoden"
+        url: /docs/1_kritisches_denken/10_die_wissenschaft_und_ihre_methoden/
+      - title: "Kritisches Denken in der Praxis"
+        url: /docs/1_kritisches_denken/11_kritisches_denken_in_der_praxis/
 
-  - title: Thema 2
+  - title: "Sprachspiele"
     children:
-      - title: "Beispiel3"
-        url: /docs/sample3/
-      - title: "Beispiel4"
-        url: /docs/sample4/
-      - title: "Beispiel5"
-        url: /docs/sample5/
+      - title: "Einführung in Sprachspiele"
+        url: /docs/2_sprachspiele/1_einführung_in_sprachspiele/
+      - title: "Behaupten"
+        url: /docs/2_sprachspiele/2_behaupten/
+      - title: "Erklären"
+        url: /docs/2_sprachspiele/3_erklären/
+      - title: "Erzählen"
+        url: /docs/2_sprachspiele/4_erzählen/
+
+  - title: "Gesellschaftsspiele"
+    children:
+      - title: "Einführung in Gesellschaftsspiele"
+        url: /docs/3_gesellschaftsspiele/1_einführung_in_gesellschaftsspiele/
+      - title: "Solidarität"
+        url: /docs/3_gesellschaftsspiele/2_solidatrität/
+      - title: "Gewalt und Zwang"
+        url: /docs/3_gesellschaftsspiele/3_gewalt_und_zwang/
+
+  - title: "Künstliche Welten"
+    children:
+      - title: "Einführung in Künstliche Welten"
+        url: /docs/4_kuenstliche_welten/1_einführung_in_kuenstliche_welten/
+      - title: "Künstliche Welten und ihre Auswirkungen"
+        url: /docs/4_kuenstliche_welten/2_kuenstliche_welten_und_ihre_auswirkungen/
+      - title: "Künstliche Welten im Alltag"
+        url: /docs/4_kuenstliche_welten/3_kuenstliche_welten_im_alltag/

@@ -23,18 +23,58 @@ main:
   #   target: _blank
 
 docs:
-  - title: Layouts
+  - title: "Critical Thinking"
     children:
-      - title: "Single Layout"
-        url: /docs/layouts/single_layout/
-      - title: "sample2"
-        url: /docs/layouts/sample2/
+      - title: "Introduction to Critical Thinking"
+        url: /docs/1_critical_thinking/1_introduction_to_critical_thinking/
+      - title: "Foundations of Logic"
+        url: /docs/1_critical_thinking/2_foundations_of_logic/
+      - title: "What Makes a Good Argument?"
+        url: /docs/1_critical_thinking/3_what_makes_a_good_argument/
+      - title: "Language Pitfalls and Detours"
+        url: /docs/1_critical_thinking/4_language_pitfalls_and_detours/
+      - title: "Cognitive Biases and Mental Heuristics"
+        url: /docs/1_critical_thinking/5_cognitive_biases_and_mental_heuristics/
+      - title: "Fallacies - Poor Argumentation"
+        url: /docs/1_critical_thinking/6_fallacies_poor_argumentation/
+      - title: "Paradoxes - Understanding Thinking Traps"
+        url: /docs/1_critical_thinking/7_paradoxes_understanding_thinking_traps/
+      - title: "Manipulation and Self-Defense"
+        url: /docs/1_critical_thinking/8_manipulation_and_self_defense/
+      - title: "Intellectual Virtues and Vices"
+        url: /docs/1_critical_thinking/9_intellectual_virtues_and_vices/
+      - title: "Science and Its Methods"
+        url: /docs/1_critical_thinking/10_science_and_its_methods/
+      - title: "Critical Thinking in Practice"
+        url: /docs/1_critical_thinking/11_critical_thinking_in_practice/
 
-  - title: Topic 2
+  - title: "Language Games"
     children:
-      - title: "Sample3"
-        url: /docs/sample3/
-      - title: "sample4"
-        url: /docs/sample4/
-      - title: "sample5"
-        url: /docs/sample5/
+      - title: "Introduction to Language Games"
+        url: /docs/2_language_games/1_introduction_to_language_games/
+      - title: "Making Claims"
+        url: /docs/2_language_games/2_making_claims/
+      - title: "Explaining"
+        url: /docs/2_language_games/3_explaining/
+      - title: "Narrating"
+        url: /docs/2_language_games/4_narrating/
+
+  - title: "Social Games"
+    children:
+      - title: "Introduction to Social Games"
+        url: /docs/3_social_games/1_introduction_to_social_games/
+      - title: "Solidarity"
+        url: /docs/3_social_games/2_solidarity/
+      - title: "Violence and Coercion"
+        url: /docs/3_social_games/3_violence_and_coercion/
+
+  - title: "Artificial Worlds"
+    children:
+      - title: "Introduction to Artificial Worlds"
+        url: /docs/4_artificial_worlds/1_introduction_to_artificial_worlds/
+      - title: "Artificial Worlds and Their Effects"
+        url: /docs/4_artificial_worlds/2_artificial_worlds_and_their_effects/
+      - title: "Artificial Worlds in Everyday Life"
+        url: /docs/4_artificial_worlds/3_artificial_worlds_in_everyday_life/
+
+        
