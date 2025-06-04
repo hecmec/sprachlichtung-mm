@@ -26,11 +26,12 @@ html {
 }
 
 .nav__list .nav__items { margin: 0; font-size: 1rem; }
-// .nav__list .nav__items .active { margin-inline-start: -0.5em; padding-inline: 0.5em; font-weight: bold; }
-// .nav__list .nav__items li.active { background-color: violet; }
-.nav__list .nav__items li { padding: 0.1em 0.25em; background-color:#F6F6F6; margin-bottom: 2px; }
+.nav__list .nav__items li { padding: 0.1em 0.25em  0.1em 0.5em; background-color:#F6F6F6; margin-bottom: 2px; }
 .nav__list .nav__items ul { background-color:#fff;  }
 .nav__list .nav__items li:has(> .active) { background-color: violet; }
 .sidebar p, .sidebar li { font-size: 1em; line-height: 1.5; }
 .nav__sub-title { font-size: 1.0em; }
+
+.menu-open { display: block; }
+.menu-closed { display: none; }
     
