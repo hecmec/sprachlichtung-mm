@@ -21,8 +21,15 @@ main:
 docs:
   - title: "Kritisches Denken"
     children:
+      - title: "Kurzgefasst"
+        url: /docs/1_kritisches_denken/0_kritisches_denken__kurz/
       - title: "Einführung in Kritisches Denken"
-        url: /docs/1_kritisches_denken/1_einfuehrung_ins_kritische_denken/
+        children:
+          - title: "Was ist Kritisches Denken?"
+            url: /docs/1_kritisches_denken/1_einfuehrung_ins_kritische_denken/1_was_ist_kritisches_denken/
+          - title: "Warum ist Kritisches Denken wichtig?"
+            url: /docs/1_kritisches_denken/1_einfuehrung_ins_kritische_denken/2_warum_ist_kritisches_denken_wichtig/
+
       - title: "Grundlagen der Logik"
         url: /docs/1_kritisches_denken/2_grundlagen_der_logik/
       - title: "Was ist ein gutes Argument?"
@@ -32,7 +39,7 @@ docs:
       - title: "Kognitive Verzerrungen und mentale Heuristiken"
         url: /docs/1_kritisches_denken/5_kognitive_verzerrungen_und_mentale_heuristiken/
       - title: "Fehlschlüsse - Schlechtes Argumentieren"
-        url: /docs/1_kritisches_denken/6_fehlschlüsse_schlechtes_argumentieren/
+        url: /docs/1_kritisches_denken/6_fehlschluesse_schlechtes_argumentieren/
       - title: "Paradoxien - Denkfallen verstehen"
         url: /docs/1_kritisches_denken/7_paradoxien_denkfallen_verstehen/
       - title: "Manipulation und Selbstverteidigung"
@@ -47,27 +54,27 @@ docs:
   - title: "Sprachspiele"
     children:
       - title: "Einführung in Sprachspiele"
-        url: /docs/2_sprachspiele/1_einführung_in_sprachspiele/
+        url: /docs/2_sprachspiele/1_einfuehrung_in_sprachspiele/
       - title: "Behaupten"
         url: /docs/2_sprachspiele/2_behaupten/
       - title: "Erklären"
-        url: /docs/2_sprachspiele/3_erklären/
+        url: /docs/2_sprachspiele/3_erklaeren/
       - title: "Erzählen"
-        url: /docs/2_sprachspiele/4_erzählen/
+        url: /docs/2_sprachspiele/4_erzaehlen/
 
   - title: "Gesellschaftsspiele"
     children:
       - title: "Einführung in Gesellschaftsspiele"
-        url: /docs/3_gesellschaftsspiele/1_einführung_in_gesellschaftsspiele/
+        url: /docs/3_gesellschaftsspiele/1_einfuehrung_in_gesellschaftsspiele/
       - title: "Solidarität"
-        url: /docs/3_gesellschaftsspiele/2_solidatrität/
+        url: /docs/3_gesellschaftsspiele/2_solidatritaet/
       - title: "Gewalt und Zwang"
         url: /docs/3_gesellschaftsspiele/3_gewalt_und_zwang/
 
   - title: "Künstliche Welten"
     children:
       - title: "Einführung in Künstliche Welten"
-        url: /docs/4_kuenstliche_welten/1_einführung_in_kuenstliche_welten/
+        url: /docs/4_kuenstliche_welten/1_einfuehrung_in_kuenstliche_welten/
       - title: "Künstliche Welten und ihre Auswirkungen"
         url: /docs/4_kuenstliche_welten/2_kuenstliche_welten_und_ihre_auswirkungen/
       - title: "Künstliche Welten im Alltag"

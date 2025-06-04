@@ -3,8 +3,8 @@ layout: single
 title: Einführung in das Kritische Denken
 # canonical_url: "https://yoursite.com/custom-canonical-url"
 header:
-  image: /assets/images/met_silk_kashan_carpet.jpg
-  caption: "Teppisch"
+image: /assets/images/met_silk_kashan_carpet.jpg
+caption: "Teppisch"
 
 toc: true
 toc_label: "Contents"
