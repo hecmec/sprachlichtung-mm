@@ -10,42 +10,55 @@
       {% endif %}
       {% for navItem in navigation %}
         <li onclick="toggleCollapse(this)">
+
+          <!-- check if url or sub item url matches current page -->
+          {% assign navItemMatch = false %}
+          {% if navItem.url == page.url %}
+            {% assign navItemMatch = true %}
+          {% endif %}
+          {% if navItem.children != null %}
+            {% for child in navItem.children %}
+              {% if child.url == page.url %}
+                {% assign navItemMatch = true %}
+              {% endif %}
+              {% if child.children != null %}
+                {% for grandChild in child.children %}
+                  {% if grandChild.url == page.url %}
+                    {% assign navItemMatch = true %}
+                  {% endif %}
+                {% endfor %}
+              {% endif %}
+            {% endfor %}
+          {% endif %}
+          <!-- determine subTitleClass -->
           {% if navItem.children != null and navItem.children.size > 0 %}
             {% assign subTitleClass = "nav__sub-title" %}
           {% else %}
             {% assign subTitleClass = "" %}
           {% endif %}
-            
-          {% if navItem.url %}
-            <a href="{{ navItem.url | relative_url }}" {% if navItem.url == page.url %} class="active"{% endif %}>
+          <div class="nav-item-wrapper">
+            <div class="nav-caret">
+              {% if navItem.children != null and navItem.children.size > 0 %}
+                <!-- {% if navItemMatch %}
+                  <span class="caret-down">&#9660;</span>
+                {% else %}
+                  <span class="caret-right">&#9654;</span>
+                {% endif %} -->
+                <span class="caret-right">&#9654;</span>
+              {% endif %}
+            </div>
+            {% if navItem.url %}
+              <a href="{{ navItem.url | relative_url }}" {% if navItem.url == page.url %} class="active"{% endif %}>
+                <span class="{{subTitleClass}} nav-item">{{ navItem.title }}</span>
+              </a>
+            {% else %}
               <span class="{{subTitleClass}} nav-item">{{ navItem.title }}</span>
-            </a>
-          {% else %}
-            <span class="{{subTitleClass}} nav-item">{{ navItem.title }}</span>
-          {% endif %}
+            {% endif %}
+  
+          </div>
 
           {% if navItem.children != null %}
-
-          <!-- check if url or sub item url matches current page -->
-            {% assign navItemMatch = false %}
-            {% if navItem.url == page.url %}
-              {% assign navItemMatch = true %}
-            {% endif %}
-            {% if navItem.children != null %}
-              {% for child in navItem.children %}
-                {% if child.url == page.url %}
-                  {% assign navItemMatch = true %}
-                {% endif %}
-                {% if child.children != null %}
-                  {% for grandChild in child.children %}
-                    {% if grandChild.url == page.url %}
-                      {% assign navItemMatch = true %}
-                    {% endif %}
-                  {% endfor %}
-                {% endif %}
-              {% endfor %}
-            {% endif %}
-            <ul {% if navItemMatch %} class="menu-open" {% else %} class="menu-closed" {% endif %}>
+            <ul {% if navItemMatch %} class="menu-open child-items" {% else %} class="menu-closed child-items" {% endif %}>
               {% for childItem in navItem.children %}
                 <li onclick="toggleCollapse(this)">
                   <!-- <a href="{{ childItem.url | relative_url }}"{% if childItem.url == page.url %} class="active"{% endif %}>{{ childItem.title }}</a> -->
@@ -54,14 +67,26 @@
                   {% else %}
                     {% assign childTitleClass = "" %}
                   {% endif %}
-                  
-                  {% if childItem.url %}
-                    <a href="{{ childItem.url | relative_url }}" {% if childItem.url == page.url %} class="active"{% endif %}>
+
+                  <div class="nav-item-wrapper">
+                    <div class="nav-caret">
+                      {% if childItem.children != null and childItem.children.size > 0 %}
+                      <!-- {% if navItemMatch %}
+                        <span class="caret-down">&#9660;</span>
+                      {% else %}
+                        <span class="caret-right">&#9654;</span>
+                      {% endif %} -->
+                      <span class="caret-right">&#9654;</span>
+                      {% endif %}
+                    </div>
+                    {% if childItem.url %}
+                      <a href="{{ childItem.url | relative_url }}" {% if childItem.url == page.url %} class="active"{% endif %}>
+                        <span class="{{childTitleClass}} child-nav-item">{{ childItem.title }}</span>
+                      </a>
+                    {% else %}
                       <span class="{{childTitleClass}} child-nav-item">{{ childItem.title }}</span>
-                    </a>
-                  {% else %}
-                    <span class="{{childTitleClass}} child-nav-item">{{ childItem.title }}</span>
-                  {% endif %}
+                    {% endif %}
+                  </div>
 
                   {% if childItem.children != null %}
 
@@ -77,7 +102,7 @@
                       {% endif %}
                     {% endfor %}
                   {% endif %}
-                  <ul {% if childItemMatch %} class="menu-open" {% else %} class="menu-closed" {% endif %}>
+                  <ul {% if childItemMatch %} class="menu-open child-items" {% else %} class="menu-closed child-items" {% endif %}>
                     {% for grandChild in childItem.children %}
                       <li>
                         <a href="{{ grandChild.url | relative_url }}"{% if grandChild.url == page.url %} class="active"{% endif %}>
